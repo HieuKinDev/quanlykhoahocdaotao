@@ -1,4 +1,4 @@
-package entity;
+package enums;
 
 public enum HinhThucHoc {
 	ONLINE, OFFLINE

@@ -2,6 +2,8 @@ package entity;
 
 import java.text.DecimalFormat;
 
+import enums.HinhThucHoc;
+
 public abstract class KhoaHoc {
 	protected String maKhoaHoc;
 	protected String tenKhoaHoc;
@@ -14,12 +16,11 @@ public abstract class KhoaHoc {
 	}
 	
 	public KhoaHoc(String maKhoaHoc, String tenKhoaHoc, int soTietHoc, HinhThucHoc hinhThucHoc, double hocPhiNiemYet) {
-		super();
-		this.maKhoaHoc = maKhoaHoc;
-		this.tenKhoaHoc = tenKhoaHoc;
-		this.soTietHoc = soTietHoc;
-		this.hinhThucHoc = hinhThucHoc;
-		this.hocPhiNiemYet = hocPhiNiemYet;
+		setMaKhoaHoc(maKhoaHoc);
+		setTenKhoaHoc(tenKhoaHoc);
+		setSoTietHoc(soTietHoc);
+		setHinhThucHoc(hinhThucHoc);
+		setHocPhiNiemYet(hocPhiNiemYet);
 	}
 
 	public String getMaKhoaHoc() {
